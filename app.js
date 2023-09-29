@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const sensorRoute = require('./route/sensors');
-const pool= require('./db');
+
 
 
 const app= express();
@@ -17,4 +17,4 @@ app.use((req, res, next) => {
 app.use(sensorRoute);
 
 
-app.listen(3000)
+app.listen(3000);

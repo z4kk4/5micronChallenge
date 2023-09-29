@@ -2,8 +2,7 @@ const express= require('express');
 const { serialize } = require('v8');
 const pool= require('../db');
 const { error } = require('console');
-const addData = require('../query')
-
+const addData = require('../query');
 const router = express.Router(); 
 
 
@@ -12,7 +11,7 @@ router.post('/api/sensors',(req, res, next)=>{
     pool.query(addData, [serial, swVersion,temperature, date, gps], (err, result) => {
         if (err) throw err;
         else {
-        res.send({message: "Data succfully sent and stored !"})};
+        res.send({message: "Data succesfully sent and stored !"})};
     });
 });
 
