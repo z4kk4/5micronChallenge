@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const sensorRoute = require('./route/sensors');
+const pool= require('./db');
+
 
 const app= express();
 app.use(bodyParser.json());
