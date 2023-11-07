@@ -6,13 +6,29 @@ const addData = require('../query');
 const router = express.Router(); 
 
 
-router.post('/api/sensors',(req, res, next)=>{
-    const { serial, swVersion,temperature, date, gps} = req.body;
-    pool.query(addData, [serial, swVersion,temperature, date, gps], (err, result) => {
-        if (err) throw err;
-        else {
-        res.send({message: "Data succesfully sent and stored !"})};
-    });
+// router.post('/api/sensors',(req, res, next)=>{
+//     const { serial, swVersion,temperature, date, gps} = req.body;
+//     pool.query(addData, [serial, swVersion,temperature, date, gps], (err, result) => {
+//         if (err) throw err;
+//         else {
+//         res.send({message: "Data succesfully sent and stored !"})};
+//     });
+// });
+router.get('/home/creds',(req, res, next)=>{
+    
+ 
+        res.send({ssid: "TP-Link_C4D4",
+        key:"08915009"
+    })
 });
+router.get('/lab/creds',(req, res, next)=>{
+    
+ 
+    res.send({ssid: "Rechnernetze",
+    key:"rnFIW625"
+})
+}
+    
+);
 
 module.exports = router;
