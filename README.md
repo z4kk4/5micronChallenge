@@ -1,5 +1,6 @@
 # 5micronChallenge :
-the challenge is a small technical test i recieved from 5Micron for a student job (which i didnt get)
+the challenge is a small technical test i recieved from 5Micron for a student job (which i didnt get), you can read the topic here:
+https://github.com/minh5micron/5micron-backend-challenge
 ## code challenge notes:
 - the DB was created using Postgress.
 - the web server was written using expressJS. 
