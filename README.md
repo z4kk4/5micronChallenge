@@ -1,5 +1,7 @@
 # 5micronChallenge :
+the challenge is a small technical test i recieved from 5Micron for a student job (which i didnt get)
 ## code challenge notes:
+- the DB was created using Postgress.
 - the web server was written using expressJS. 
 - the body-parser module was used to parse json used in the requests and resutls. 
 - tried to seperate the parts in diffrent files for comprehension, route/sensors.js to deal with the ```/api/sensors``` POST method, db.js to coonect to the PG server and DB, query.js is just the SQL query to insert our data into the DB.
